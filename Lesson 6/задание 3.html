@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    let vasya = { name: "Вася", surname: "Пупкин", id: 1};
+    let petya = { name: "Петя", surname: "Иванов", id: 2};
+    let masha = { name: "Маша", surname: "Петрова", id: 3};
+
+    let users = [ vasya, petya, masha];
+
+    let userMapped = users.map(users =>
+            `${users.name} ${users.surname} ${users.id}`)
+      console.log(userMapped[2]);
+
+
+
+</script>
+
+
+</body>
+</html>

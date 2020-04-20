@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+
+}
+
+body {
+    margin: 0;
+
+    background: linear-gradient(318deg, #11906f, #2932aa, #8a0c0c);
+    background-size: 600% 600%;
+    -webkit-animation: gradient 52s ease infinite;
+    -moz-animation: gradient 52s ease infinite;
+    -o-animation: gradient 52s ease infinite;
+    animation: gradient 52s ease infinite;
+
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@-o-keyframes gradient {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@keyframes gradient {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+
+.modal-open {
+    font-size: 40px;
+    text-align:center;
+    border-radius: 30px;
+}
+.modal-open a {
+    padding: 20px 15px;
+    background-color: rgba(232, 242, 242, 0.5);
+    color: #000000;
+    text-decoration:none
+}
+.modal-open a:hover {
+    background-color: #ffffff;
+    color: #010089;
+}
+.Modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: rgba(0,0,0,0.7);
+    pointer-events: none;
+}
+.Modal:target {
+    display: flex;
+    pointer-events: auto;
+}
+.Modal_Body {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    background: #FFF;
+    width: 450px;
+    height: 500px;
+    background-color: rgb(217, 230, 242, 0.5);
+    text-align: center;
+    border-radius: 10px;
+
+}
+input[type="text"], input[type="password"]{
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    padding-left: 10x;
+}
+p{
+    font-size: 30px;
+    font-weight:bolder;
+}
+
+.dws-submint{
+    width: 100px;
+    height: 50px;
+    margin: 20px 0 20px 0;
+    font-size: 20px;
+    color: #fafcff;
+    background-color: #ff342f;
+    border: none;
+    border-bottom: 2px solid #b01513;
+    cursor: pointer;
+
+}
+
+.dws-cancel{
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    font-size: 15px;
+
+}
+
+.ModalFull {
+    position: absolute;
+    display: block;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}

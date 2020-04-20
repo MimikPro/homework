@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+</head>
+<style>
+    .myMessage {
+        float: right;
+    }
+</style>
+<body>
+<input id="name" />
+<button id="nameBTN">submit name</button>
+<br />
+<br />
+<input id="author" />
+<input id="text" />
+<button id="send">send message</button>
+<div id="list"></div>
+</body>
+<script>
+    let myName = null;
+
+    const addMessage = json => {
+        const data = JSON.parse(json);
+        document.getElementById("list").innerHTML = `
+      ${document.getElementById("list").innerHTML}
+      <div class='${data.author === myName ? "myMessage" : ""}'>
+        <div>Author:${data.author}</div>
+        <div>Text:${data.text}</div>
+      </div>
+      `;
+    };
+
+    document.getElementById("nameBTN").addEventListener("click", () => {
+        myName = document.getElementById("name").value;
+        document.getElementById("name").disabled = true;
+    });
+
+    document.getElementById("send").addEventListener("click", () => {
+        const author = document.getElementById("author").value;
+        const text = document.getElementById("text").value;
+
+        setTimeout(() => {
+            addMessage(
+                JSON.stringify({
+                    author,
+                    text
+                })
+            );
+        }, 500);
+    });
+</script>
+</html>
