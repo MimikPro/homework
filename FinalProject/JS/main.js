@@ -23,3 +23,20 @@
         menu.classList.remove("header-menu-active");
     });
 }());
+
+
+
+// modalwindow
+let modal = document.getElementById("ModalWindow");
+let entermodal = document.getElementById("Login-modal");
+let closemodal = document.querySelector(".close");
+
+entermodal.onclick = function () {
+    ModalWindow.style.display="block"
+
+}
+// document.getElementById("Login-modal").addEventListener("click", () =>{
+//     const element = document.getElementById("ModalWindow");
+//     console.log(element);
+//     element.classList.add("Modal_Body");
+// })

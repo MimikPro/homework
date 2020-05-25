@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modalwindow.css">
 
 
     <title>Travel Landing Page</title>
@@ -33,7 +34,7 @@
                           <a href="#" class="header_link">Videos</a>
                       </li>
                       <li class="header_item">
-                          <a href="#" class="header_link">Sign in</a>
+                          <a href="#!" id="Login-modal" class="header_link modal-sign">Sign in</a>
                       </li>
                   </ul>
                   <div class="header-menu-close">
@@ -500,6 +501,23 @@
             </div>
     </footer>
 
+
+
+<!--    ModalWindow-->
+
+
+    <div id="ModalWindow" class="Modal">
+        <div class="Modal_Body">
+            <p>Log in</p>
+            <span class="close">&times;</span>
+            <form>
+                <div class="dws-input">
+                    <input type="text" required placeholder="Введите ваше имя">
+                    <input type="Password" required placeholder="Введите пароль">
+                    <br/>
+                    <input class="dws-submint" type="submit" value="Войти">
+                </div>
+            </form>
 
 
 
