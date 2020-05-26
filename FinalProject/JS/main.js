@@ -32,9 +32,19 @@ let entermodal = document.getElementById("Login-modal");
 let closemodal = document.querySelector(".close");
 
 entermodal.onclick = function () {
-    ModalWindow.style.display="block"
+    ModalWindow.style.display="block";
+};
 
-}
+closemodal.onclick = function () {
+    ModalWindow.style.display="none";
+};
+
+window.onclick = function (e) {
+    if(e.target == modal) {
+        ModalWindow.style.display="none";
+    };
+};
+
 // document.getElementById("Login-modal").addEventListener("click", () =>{
 //     const element = document.getElementById("ModalWindow");
 //     console.log(element);
