@@ -17,58 +17,65 @@
     position: relative;
     z-index: 100;
     display: block;
-    margin: auto;
     padding: 15px;
     background: #FFF;
-    width:350px;
-    height: 300px;
+    width:300px;
+    height: 250px;
     background-color: rgb(217, 230, 242, 0.7);
     text-align: center;
     border-radius: 10px;
     margin: 250px auto 0 auto
 
+
 }
 
-input[type="text"],input[type="password"]{
-    width: 300px;
-    height:50px;
-    font-size: 18px;
+.modal-title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    width: 250px;
+    height:45px;
+    font-size: 16px;
     margin-bottom: 25px;
+    border-color: #ffffff;
     border-radius: 4px;
     padding-left: 10px;
 }
+
 
 .dws-submint {
     padding: 13px 30px;
     margin: 5px 0 20px 0;
     font-size: 15px;
     color: #fff;
-    background-color: #2ca8c6;
+    background-color: #c6211f;
     border: none;
-    border-bottom: 4px solid #6ee9fd;
     cursor: pointer;
 
 }
+
+.dws-submint:hover{
+    transition: all 0.2s;
+    background: #f72d29;
+    box-shadow: #8a0c0c;
+
+}
+
 
 
 .dws-input input:hover{
     box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
 }
-.dws-submit {
-    padding: 13px 30px;
-    margin: 5px 0 20px 0;
-    font-size: 15px;
-    color: #fff;
-    background-color: #2ca8c6;
-    border: none;
-    border-bottom: 4px solid #6ee9fd;
-    cursor: pointer;
-}
-.dws-submit:hover{
-    transition: all 0.5s;
-    background: #fff;
-    color: #2c536c;
-}
+
 
 .close{
     width: 0 px;

@@ -50,3 +50,5 @@ window.onclick = function (e) {
 //     console.log(element);
 //     element.classList.add("Modal_Body");
 // })
+
+// slider
