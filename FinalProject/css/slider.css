@@ -113,15 +113,17 @@
     }
 }
 
-@media screen and (max-width: 375px){
-    .slider .slick-arrow.slick-prev{
+@media screen and (max-width: 375px) {
+    .slider .slick-arrow.slick-prev {
         left: 0;
         background: url('../img/Vector2.svg') 0 0 / 70% no-repeat;
     }
-    .slider .slick-arrow.slick-next{
+
+    .slider .slick-arrow.slick-next {
         right: 0;
         background: url('../img/Vector1.svg') 0 0 / 70% no-repeat;
     }
+
     .slider__item {
         padding: 0px 15px;
         height: 100px;
@@ -135,7 +137,9 @@
         z-index: 10;
         font-size: 0;
         width: 20px;
-        height: 60px;
+        height: 50px;
 
-   }
+    }
 
+
+}
