@@ -836,8 +836,92 @@ margin-bottom: 131px;
 
 
 }
+@media screen and (max-width: 414px){
+    .title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .start{
+        padding-left: 125px;
+        width: 414px;
+        height: 477px;
+        padding-top: 125px;
+        padding-bottom: 223px;
+        padding-left: 0px;
+    }
 
-@media screen and (max-width: 767px) {
+    .toure-picture, .info-tours{
+        grid-column: span 2;
+
+    }
+
+    .toure-picture{
+        margin-bottom: 12px;
+    }
+
+    .tours{
+        margin-bottom: 70px;
+    }
+
+    .today-baner{
+        grid-column: span 6;
+    }
+
+    .footer-logo{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .footer-navig{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 375px){
+    .title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .start{
+        padding-left: 125px;
+        width: 380px;
+        height: 477px;
+        padding-top: 125px;
+        padding-bottom: 223px;
+        padding-left: 0px;
+    }
+
+    .toure-picture, .info-tours{
+        grid-column: span 2;
+
+    }
+
+    .toure-picture{
+        margin-bottom: 12px;
+    }
+
+    .tours{
+        margin-bottom: 70px;
+    }
+
+    .today-baner{
+        grid-column: span 6;
+    }
+
+    .footer-logo{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .footer-navig{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
     .title {
         font-size: 32px;
         line-height: 48px;
